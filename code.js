@@ -1,8 +1,8 @@
 var caller = $("#ringImg");
 
 function catchme() {
-    var randX = Math.floor(Math.random() * (window.innerWidth - 100));
-    var randY = Math.floor(Math.random() * (window.innerHeight - 100));
+    var randX = Math.floor(Math.random() * (window.innerWidth - 200));
+    var randY = Math.floor(Math.random() * (window.innerHeight - 250));
     console.log([randX, randY]);
     caller.stop().animate({ left: randX + "px", top: randY + "px" });
 }
@@ -26,7 +26,7 @@ function givememoney() {
     canvas.id = "givememoney";
 
     var coin = new Image();
-    coin.src = "coin.png";
+    coin.src = "img/coin.png";
     // 440 wide, 40 high, 10 states
     coin.onload = function () {
         element.appendChild(canvas);
